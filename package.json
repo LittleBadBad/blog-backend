@@ -1,0 +1,43 @@
+{
+  "author": {
+    "name": "A Strapi developer"
+  },
+  "dependencies": {
+    "@strapi/plugin-documentation": "^4.6.0",
+    "@strapi/plugin-gatsby-preview": "^1.0.0-beta.0",
+    "@strapi/plugin-graphql": "^4.6.0",
+    "@strapi/plugin-i18n": "^4.6.0",
+    "@strapi/plugin-users-permissions": "^4.6.0",
+    "@strapi/strapi": "^4.6.0",
+    "fs-extra": "^10.0.0",
+    "lodash.set": "^4.3.2",
+    "mime-types": "^2.1.27",
+    "mysql": "2.18.1",
+    "strapi-plugin-email-designer": "^2.1.1",
+    "strapi-plugin-entity-relationship-chart": "^4.1.0",
+    "strapi-plugin-website-builder": "^2.2.0",
+    "strapi-provider-email-smtp": "^1.0.3"
+  },
+  "description": "A Strapi application",
+  "devDependencies": {
+    "types-4-strapi": "^1.0.22"
+  },
+  "engines": {
+    "node": ">=14.19.1 <=18.x.x",
+    "npm": ">=6.0.0"
+  },
+  "license": "MIT",
+  "name": "backend",
+  "private": true,
+  "scripts": {
+    "develop": "strapi develop",
+    "start": "strapi start",
+    "build": "strapi build",
+    "strapi": "strapi",
+    "t4s": "t4s"
+  },
+  "strapi": {
+    "uuid": "78ef401f-d2ba-4ee8-95ab-f840c944c28e"
+  },
+  "version": "0.1.0"
+}

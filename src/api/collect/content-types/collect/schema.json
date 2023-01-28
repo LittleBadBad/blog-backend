@@ -1,0 +1,36 @@
+{
+  "kind": "collectionType",
+  "collectionName": "collects",
+  "info": {
+    "singularName": "collect",
+    "pluralName": "collects",
+    "displayName": "collect",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "category": {
+      "type": "string",
+      "default": "默认"
+    },
+    "private": {
+      "type": "boolean",
+      "default": true,
+      "required": true
+    },
+    "user": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "plugin::users-permissions.user",
+      "inversedBy": "collects"
+    },
+    "posts": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::post.post"
+    }
+  }
+}

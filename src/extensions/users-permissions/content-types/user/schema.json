@@ -63,50 +63,27 @@
       "inversedBy": "users",
       "configurable": false
     },
+    "name": {
+      "type": "string"
+    },
+    "bio": {
+      "type": "text"
+    },
+    "image": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    },
     "posts": {
       "type": "relation",
       "relation": "oneToMany",
       "target": "api::post.post",
-      "mappedBy": "user"
-    },
-    "comments": {
-      "type": "relation",
-      "relation": "oneToMany",
-      "target": "api::comment.comment",
-      "mappedBy": "user"
-    },
-    "collects": {
-      "type": "relation",
-      "relation": "oneToMany",
-      "target": "api::collect.collect",
-      "mappedBy": "user"
-    },
-    "post_votes": {
-      "type": "relation",
-      "relation": "oneToMany",
-      "target": "api::post-vote.post-vote",
-      "mappedBy": "user"
-    },
-    "comment_votes": {
-      "type": "relation",
-      "relation": "oneToMany",
-      "target": "api::comment-vote.comment-vote",
-      "mappedBy": "user"
-    },
-    "avatars": {
-      "type": "relation",
-      "relation": "oneToMany",
-      "target": "api::avatar.avatar",
-      "mappedBy": "user"
-    },
-    "intro": {
-      "type": "text"
-    },
-    "postLikes": {
-      "type": "relation",
-      "relation": "oneToMany",
-      "target": "api::post-like.post-like",
-      "mappedBy": "user"
+      "mappedBy": "author"
     }
   }
 }

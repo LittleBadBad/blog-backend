@@ -36,13 +36,13 @@ module.exports = ({env}) => ({
       jwtSecret: env('JWT_SECRET', '123456')
     },
   },
-  'graphql': {
-    enabled: true,
-    config: {
-      defaultLimit: 10,
-      maxLimit: 20
-    }
-  },
+  // 'graphql': {
+  //   enabled: true,
+  //   config: {
+  //     defaultLimit: 10,
+  //     maxLimit: 20
+  //   }
+  // },
   'email-designer': {
     enabled: true,
     // ⬇︎ Add the config property
@@ -102,5 +102,5 @@ module.exports = ({env}) => ({
         },
       },
     },
-  },
+  }
 });
